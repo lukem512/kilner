@@ -563,7 +563,8 @@
         <h1>Resources</h1>
         <ul>
           <li><a href="https://www.kilnerjar.co.uk/about-us">About the Kilner company</a>
-          <li><a href="https://preservingjarparts.co.uk/">Parts, Spares and Information</a>
+          <li><a href="seals.html">Table of measurements for rubber seals</a>
+          <li><a href="https://preservingjarparts.co.uk/">Preserving Jar Parts: spares and information</a>
         </ul>
       </div>
 
@@ -588,7 +589,7 @@
         let node = e.target;
         while (node.className !== "timeline-item") {
           if (!node.parentNode) {
-            return console.warning("Unable to find parent timeline item");
+            return console.log("Unable to find parent timeline item");
           }
           node = node.parentNode;
         }
