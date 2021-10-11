@@ -3,10 +3,11 @@
   --secondary: black;
   --normal-weight: 400;
   --bold-weight: 600;
+  --background: #F2F2F2;
 }
 
 html {
-  background: #F2F2F2;
+  background: var(--background);
 }
 
 html,
@@ -245,6 +246,27 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -8px 24px;
+}
+
+.gallery img {
+  width: 115px;
+  margin: 8px;
+  border: 2px solid var(--background);
+  transition: 0.2s ease-in;
+}
+
+.gallery img:hover {
+  border: 2px solid var(--primary);
 }
 
 #footer {
