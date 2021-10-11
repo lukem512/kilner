@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="img/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
     <meta name="theme-color" content="#F9F9F9" />
     <meta name="description" content="History, parts and components for vintage Kilner jars" />
@@ -27,7 +26,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="img/vkj.png">
+    <!--[if IE]><link rel="SHORTCUT ICON" href="img/favicon.ico"/><![endif]-->
+
+    <!-- Page title -->
     <title>Vintage Kilner Jars</title>
   </head>
   <body>
@@ -41,77 +44,377 @@
         </div>
       </div>
 
-
       <div id="intro">
         <h1>About this website</h1>
         <p>This website contains descriptions, illustrations and images of vintage Kilner&reg; preserving jars. The design of the jar has changed several times since its creation and most components are not interchangeable.</p>
-        <p>Using the timeline below, you may be able to identify your own vintage jars and acquire missing parts to keep them in use.</p>
+        <p>Using the timeline, you may be able to identify your own vintage jars and acquire missing parts to keep them in use.</p>
       </div>
+
+      <!-- Message for the Luddites -->
+      <noscript>
+        <p>This website uses JavaScript to operate. Please enable JavaScript in your browser.</p>
+      </noscript>
 
       <div id="timeline">
         <h1>The history of the Kilner&reg; Jar</h1>
 
         <!-- Original -->
         <div class="timeline-item selected">
-          <!-- circle-1.svg -->
-          <svg class="timeline-point" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.293 26.617">
-            <path fill="none" stroke="#000" stroke-width="2.5" d="M4.696 6.202C3.184 8.722.916 11.998 1.295 15.4c.378 3.402 3.401 6.93 7.055 8.693 3.654 1.764 7.938 1.764 11.717-.378 3.78-2.142 7.056-6.426 7.812-10.331.756-3.906-1.008-7.434-4.788-9.576-3.78-2.141-9.575-2.897-12.851-2.394-3.276.504-4.032 2.268-5.544 4.788z"/>
-          </svg>
-          <div class="timeline-date">1919 &#8212; 1948</div>
-          <div class="timeline-title">Original "Kilner" Jar</div>
+          <div class="timeline-item-label">
+            <div class="timeline-title">Original "Kilner" Jar</div>
+            <div class="timeline-date">1919 &#8212; 1948</div>
+          </div>
+
+          <div class="timeline-structure">
+            <!-- circle-1.svg -->
+            <svg class="timeline-point" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.293 26.617" >
+              <path fill="none" stroke="#000" stroke-width="2.5" d="M4.696 6.202C3.184 8.722.916 11.998 1.295 15.4c.378 3.402 3.401 6.93 7.055 8.693 3.654 1.764 7.938 1.764 11.717-.378 3.78-2.142 7.056-6.426 7.812-10.331.756-3.906-1.008-7.434-4.788-9.576-3.78-2.141-9.575-2.897-12.851-2.394-3.276.504-4.032 2.268-5.544 4.788z"/>
+            </svg>
+
+            <!-- line-1.svg -->
+            <svg class="timeline-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.54 100" preserveAspectRatio="none">
+              <path fill="none" stroke="#000" stroke-linecap="round" stroke-width="4.724" d="M13.057 96.576c-.186-3.1-.371-6.2-.319-9.982.053-3.781.343-8.245.436-13.675.092-5.43-.012-11.828.25-19.326.262-7.497.891-16.098 1.052-23.747.16-7.648-.148-14.347-.161-18.679-.013-4.332.269-6.298.55-8.263"/>
+            </svg>
+          </div>
 
           <div class="timeline-content">
-              <p>Green glass between 1918 and 1932. Clear glass until 1948.</p>
+            <div class="timeline-content-inner">
+              <h2>The Original "Kilner" Jar</h2>
+              <div class="timeline-mobile-date">1919 &#8212; 1948</div>
+              <p>The first widely-available Kilner jars. These are <b>cylindrical</b> glass jars with <b>glass lids</b>. The jars are secured using a <b>steel screw cap</b>.</p>
+              <p>These jars were made using <b>green glass</b> between 1918 and 1932. The green jars often contain bubbles and other defects. From 1932 until 1948 they were manufactured using <b>clear glass</b> and are of a much higher quality.</p>
+
+              <h3>Labels</h3>
+              <p>The labelling of Original jars varies with their age. All Original Kilner jars are embossed with <span class="kilner-text">the kilner jar</span>.</p>
+              <p>Older, green glass jars may be embossed with additional text. One example shows <span class="kilner-text">makers kilner brothers lt<sup class="underlined">d</sup>  cornisboro, dewsbury and london</span>.</p>
+
+              <h3>Sizes</h3>
+              <p>The jars are usually embossed with their size, on the underside.</p>
+              <p>Original jars came in the following sizes:</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>Height</th>
+                    <th>Diameter (base)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1 Lb</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>2 Lbs</td>
+                    <td>7"</td>
+                    <td>3 <sup>5</sup>&frasl;<sub>8</sub>"</td>
+                  </tr>
+                  <tr>
+                    <td>3 Lbs</td>
+                    <td>8"</td>
+                    <td>3 <sup>7</sup>&frasl;<sub>8</sub>"</td>
+                  </tr>
+                  <tr>
+                    <td>4 Lbs</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>7 Lbs</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3>Lids</h3>
+              <p>The lids are usually embossed with <span class="kilner-text">original "kilner" jar lid</span>. They are all decorated with concentric circles. The lids fit <b>over</b> the neck of the jar and sit on a small lip or shoulder.</p>
+              <p>As with the jars, older, green-glass jars may be embossed with different text. Some jars are embossed with <span class="kilner-text">kilner bro<sup class="underlined">s</sup> makers</span>.</p>
               <img src="img/original-lid.svg" />
+
+              <h3>Screw Caps</h3>
+              <p>The steel screw caps, also known as bands, tarnish quite easily and are usually rusted. They can be used, with caution, as the metal does not contact food inside the jar.</p>
+              <p>The dimensions of the screw caps are given below:</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Height</th>
+                    <th>Diameter (outer)</th>
+                    <th>Diameter (inner)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1 <sup>1</sup>&frasl;<sub>16</sub>"</td>
+                    <td>3 <sup>1</sup>&frasl;<sub>4</sub>"</td>
+                    <td>2 <sup>5</sup>&frasl;<sub>8</sub>"</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3>Seals</h3>
+              <p>The jars came with circular rubber seals, usually white in colour.</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Diameter (outer)</th>
+                    <th>Diameter (inner)</th>
+                    <th>Thickness</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2 <sup>7</sup>&frasl;<sub>8</sub>"</td>
+                    <td>2 <sup>9</sup>&frasl;<sub>16</sub>"</td>
+                    <td><sup>3</sup>&frasl;<sub>32</sub>"</td>
+                  </tr>
+                  <tr>
+                    <td>74mm</td>
+                    <td>66mm</td>
+                    <td>2mm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
-        <img class="timeline-line" src="img/line-1.svg" />
-
         <!-- Improved -->
         <div class="timeline-item">
-          <!-- circle-2.svg -->
-          <svg class="timeline-point" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.131 28.61">
-            <path fill="none" stroke="#000" stroke-width="2.5" d="M3.795 7.138c-1.512 2.52-2.867 5.886-2.477 9.544.39 3.658 2.521 7.61 5.788 9.372 3.266 1.764 7.665 1.341 10.575.896 2.91-.446 4.331-.913 6.358-3.056 2.026-2.143 4.655-5.957 4.832-10.13.177-4.173-2.1-8.703-5.88-10.845-3.779-2.142-9.062-1.896-12.539-.935-3.476.96-5.145 2.635-6.657 5.155z"/>
-          </svg>
-          <div class="timeline-date">1948 &#8212; 1969</div>
-          <div class="timeline-title">Improved "Kilner" Jar</div>
-        </div>
+          <div class="timeline-item-label">
+            <div class="timeline-title">Improved "Kilner" Jar</div>
+            <div class="timeline-date">1948 &#8212; 1969</div>
+          </div>
 
-        <img class="timeline-line" src="img/line-4.svg" />
+          <div class="timeline-structure">
+            <!-- circle-2.svg -->
+            <svg class="timeline-point" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.131 28.61" >
+              <path fill="none" stroke="#000" stroke-width="2.5" d="M3.795 7.138c-1.512 2.52-2.867 5.886-2.477 9.544.39 3.658 2.521 7.61 5.788 9.372 3.266 1.764 7.665 1.341 10.575.896 2.91-.446 4.331-.913 6.358-3.056 2.026-2.143 4.655-5.957 4.832-10.13.177-4.173-2.1-8.703-5.88-10.845-3.779-2.142-9.062-1.896-12.539-.935-3.476.96-5.145 2.635-6.657 5.155z"/>
+            </svg>
+
+            <!-- line-4.svg -->
+            <svg class="timeline-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.54 100" preserveAspectRatio="none">
+              <path fill="none" stroke="#000" stroke-linecap="round" stroke-width="4.724" d="M12.113 96.262c-.08-2.944-.161-5.886-.528-10.14-.367-4.253-1.021-9.818-1.348-15.589-.327-5.771-.327-11.749.04-18.199.368-6.45 1.102-13.371 1.524-20.05.423-6.679.534-13.114.783-17.892.25-4.778.636-7.898 1.023-11.016"/>
+            </svg>
+          </div>
+
+          <div class="timeline-content">
+            <div class="timeline-content-inner">
+              <h2>The Improved "Kilner" Jar</h2>
+              <div class="timeline-mobile-date">1948 &#8212; 1969</div>
+              <p>An updated design, these are <b>cylindrical</b> glass jars with embossed <b>vertical ridges</b> for extra grip. The neck was also narrowed and shortened.</p>
+              <p>The jars have with <b>glass lids</b> and are secured using a <b>steel screw cap</b>.</p>
+
+              <h3>Labels</h3>
+              <p>The jars are embossed with <span class="kilner-text">the kilner jar improved reg<sup class="underlined">d</sup></span>.</p>
+
+              <h3>Lids</h3>
+              <p>The lids are embossed with <span class="kilner-text">improved "kilner" lid</span>. They are not decorated. The lids fit <b>inside</b> the neck of the jar.</p>
+
+              <h3>Sizes</h3>
+              <p>Improved jars came in the following sizes:</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>Height</th>
+                    <th>Diameter (base)*</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1 Lb</td>
+                    <td>5 <sup>1</sup>&frasl;<sub>4</sub>"</td>
+                    <td>3 <sup>1</sup>&frasl;<sub>8</sub>"</td>
+                  </tr>
+                  <tr>
+                    <td>2 Lbs</td>
+                    <td>6 <sup>29</sup>&frasl;<sub>32</sub>"</td>
+                    <td>3 <sup>11</sup>&frasl;<sub>16</sub>"</td>
+                  </tr>
+                  <tr>
+                    <td>3 Lbs</td>
+                    <td>7 <sup>5</sup>&frasl;<sub>8</sub>"</td>
+                    <td>3 <sup>29</sup>&frasl;<sub>32</sub>"</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>* The diameter does not include the vertical ridges on these jars.</p>
+
+              <h3>Screw Caps</h3>
+              <p>As with the Original jars, the steel screw caps tarnish quite easily and are usually rusted. They can be used, with caution, as the metal does not contact food inside the jar.</p>
+              <p>The dimensions of the screw caps are given below:</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Height</th>
+                    <th>Diameter (outer)</th>
+                    <th>Diameter (inner)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><sup>3</sup>&frasl;<sub>4</sub>"</td>
+                    <td>2 <sup>3</sup>&frasl;<sub>4</sub>"</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
 
         <!-- Dual Purpose -->
         <div class="timeline-item">
-          <!-- circle-3.svg -->
-          <svg class="timeline-point" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.338 28.283">
-            <path fill="none" stroke="#000" stroke-width="2.5" d="M3.528 7.619c-1.446 2.787-2.8 6.152-2.066 9.375.734 3.224 3.557 6.306 6.823 8.07 3.267 1.764 6.975 2.21 9.974 1.853 3-.356 5.29-1.514 7.06-3.634 1.77-2.12 3.018-5.201 2.727-8.973-.29-3.772-2.122-8.235-5.711-10.666-3.59-2.432-8.94-2.831-12.382-1.927-3.443.905-4.98 3.114-6.425 5.902z"/>
-          </svg>
-          <div class="timeline-date">1969 &#8212; 1978</div>
-          <div class="timeline-title">Dual Purpose Jar</div>
-        </div>
+          <div class="timeline-item-label">
+            <div class="timeline-title">Dual Purpose Jar</div>
+            <div class="timeline-date">1969 &#8212; 1978</div>
+          </div>
 
-        <img class="timeline-line" src="img/line-3.svg" />
+          <div class="timeline-structure">
+            <!-- circle-3.svg -->
+            <svg class="timeline-point" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.338 28.283" >
+              <path fill="none" stroke="#000" stroke-width="2.5" d="M3.528 7.619c-1.446 2.787-2.8 6.152-2.066 9.375.734 3.224 3.557 6.306 6.823 8.07 3.267 1.764 6.975 2.21 9.974 1.853 3-.356 5.29-1.514 7.06-3.634 1.77-2.12 3.018-5.201 2.727-8.973-.29-3.772-2.122-8.235-5.711-10.666-3.59-2.432-8.94-2.831-12.382-1.927-3.443.905-4.98 3.114-6.425 5.902z"/>
+            </svg>
+
+            <!-- line-3.svg -->
+            <svg class="timeline-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.54 100" preserveAspectRatio="none">
+              <path fill="none" stroke="#000" stroke-linecap="round" stroke-width="4.724" d="M12.113 96.262c-.08-2.944-.161-5.886-.083-9.694.08-3.808.317-8.481.515-13.938.197-5.456.354-11.696.276-18.59-.079-6.896-.394-14.448-.495-21.441-.102-6.994.01-13.43.258-18.207.25-4.778.636-7.898 1.023-11.016"/>
+            </svg>
+          </div>
+
+          <div class="timeline-content">
+            <div class="timeline-content-inner">
+              <h2>The Dual Purpose Jar</h2>
+              <div class="timeline-mobile-date">1969 &#8212; 1978</div>
+              <p>The Dual Purpose jar is the first jar to employ a metal lid, made of steel. The underside is dimpled to increase the grip of the jar on a worktop.</p>
+
+              <h3>Labels</h3>
+              <p>The jars are embossed with <span class="kilner-text">kilner reg<sup class="underlined">d</sup</span> DualPurpose <span class="kilner-text">jar</span>.</p>
+
+              <h3>Lids</h3>
+              <p>The lids are a thin sheet of steel, printed with Dual Purpose.</p>
+              <p>The glass lids of the later Ravenhead jars also fit the Dual Purpose jars. However, the metal screw caps will not fit over a glass lid.</p>
+            </div>
+          </div>
+        </div>
 
         <!-- Ravenhead "Red Tops" -->
         <div class="timeline-item">
-          <!-- circle-4.svg -->
-          <svg class="timeline-point" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.193 27.375">
-            <path fill="none" stroke="#000" stroke-width="2.5" d="M3.388 8.559c-1.39 2.842-2.367 6.118-2.089 9.03.278 2.912 1.81 5.46 4.43 6.957 2.62 1.496 6.328 1.942 9.372 1.25 3.043-.69 5.422-2.515 7.193-4.636 1.77-2.12 2.93-4.532 2.594-7.97-.336-3.438-2.167-7.901-5.166-10.12-3-2.22-7.168-2.197-10.155-.98-2.986 1.216-4.79 3.626-6.18 6.469z"/>
-          </svg>
-          <div class="timeline-date">1978 &#8212; 2000</div>
-          <div class="timeline-title">Ravenhead "Red Top"</div>
+          <div class="timeline-item-label">
+            <div class="timeline-title">Ravenhead "Red Top"</div>
+            <div class="timeline-date">1978 &#8212; 2000</div>
+          </div>
+
+          <div class="timeline-structure">
+            <!-- circle-4.svg -->
+            <svg class="timeline-point" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.193 27.375">
+              <path fill="none" stroke="#000" stroke-width="2.5" d="M3.388 8.559c-1.39 2.842-2.367 6.118-2.089 9.03.278 2.912 1.81 5.46 4.43 6.957 2.62 1.496 6.328 1.942 9.372 1.25 3.043-.69 5.422-2.515 7.193-4.636 1.77-2.12 2.93-4.532 2.594-7.97-.336-3.438-2.167-7.901-5.166-10.12-3-2.22-7.168-2.197-10.155-.98-2.986 1.216-4.79 3.626-6.18 6.469z"/>
+            </svg>
+
+            <!-- line-5.svg -->
+            <svg class="timeline-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.54 100" preserveAspectRatio="none">
+              <path fill="none" stroke="#000" stroke-linecap="round" stroke-width="4.724" d="M12.113 96.262c.759-3.993 1.517-7.984 1.7-13.312.184-5.329-.208-11.994-.954-17.241s-1.848-9.075-1.716-14.528c.131-5.454 1.494-12.533 1.917-19.211.422-6.679-.096-12.958-.161-17.657s.321-7.819.708-10.937"/>
+            </svg>
+          </div>
+
+          <div class="timeline-content">
+            <div class="timeline-content-inner">
+              <h2>The Ravenhead "Red Top" Jar</h2>
+              <div class="timeline-mobile-date">1978 &#8212; 2000</div>
+              <p>From the late 1970's, Kilner jars were produced by Ravenhead Glassware. These jars are secured by a characteristic <b>plastic screw cap</b>, usually bright red or orange. This gave rise to the common name of "Red Top".</p>
+              <p>The jars are squarish, with rounded corners. They may have ridges or dimples on the underside to prevent them slipping off the worktop.</p>
+
+              <h3>Labels</h3>
+              <p>The jars are embossed with Ravenhead <span class="kilner-text">kilner</span> Jar. Some jars are stamped with <span class="kilner-text">made in uk</span> on underside.</p>
+              <p>Additional stamping on the underside may include a number and a letter. Examples include <span class="kilner-text">h 3</span>, <span class="kilner-text">h 13</span> and <span class="kilner-text">p 1</span>.</p>
+
+              <h3>Lids</h3>
+              <p>The lids are made of glass and are embossed with Ravenhead <span class="kilner-text">kilner</span> and the <b>Ravenhead Glass</b> logo. They are not decorated. The lids fit <b>inside</b> the neck of the jar.</p>
+              <p>Oddly, the lids appear to use imperial measurements, despite the capacity of the jars using metric measurements.</p>
+
+              <h3>Sizes</h3>
+              <p>Ravenhead jars came in the following sizes:</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Size</th>
+                    <th>Height</th>
+                    <th>Diameter (base)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>500ml</td>
+                    <td>95mm</td>
+                    <td>95mm</td>
+                  </tr>
+                  <tr>
+                    <td>1000ml</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>1500ml</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3>Screw Caps</h3>
+              <p>The chunky, plastic screw caps that secure Ravenhead jars are brightly coloured. They are usually red, although sometimes orange, white or brown.</p>
+
+              <h3>Seals</h3>
+              <p>The jars came with circular rubber seals, usually red or orange in colour.</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Diameter (outer)</th>
+                    <th>Diameter (inner)</th>
+                    <th>Thickness</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>3 <sup>1</sup>&frasl;<sub>4</sub>"</td>
+                    <td>2 <sup>9</sup>&frasl;<sub>16</sub>"</td>
+                    <td><sup>2</sup>&frasl;<sub>32</sub>"</td>
+                  </tr>
+                  <tr>
+                    <td>82.5mm</td>
+                    <td>72mm</td>
+                    <td>1.8mm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
 
-        <img class="timeline-line" src="img/line-5.svg" />
-
         <!-- New Kilner Jars -->
-        <div class="timeline-item">
-          <!-- circle-5.svg -->
-          <svg class="timeline-point" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.54 27.574">
-            <path fill="none" stroke="#000" stroke-width="2.5" d="M2.135 6.218c-1.39 2.843-.874 7.388.15 10.935C3.31 20.7 4.84 23.248 7.46 24.745c2.62 1.496 6.33 1.942 9.373 1.25 3.043-.69 5.422-2.515 7.092-5.672 1.67-3.156 2.63-7.64 2.294-11.077-.336-3.437-1.966-5.83-4.865-7.013-2.9-1.185-7.068-1.161-10.8-.58-3.733.583-7.03 1.723-8.42 4.566z"/>
-          </svg>
-          <div class="timeline-date">2000 onwards</div>
-          <div class="timeline-title">New Kilner Jar</div>
+        <div class="timeline-item" >
+          <div class="timeline-item-label">
+            <div class="timeline-title">New Kilner Jar</div>
+            <div class="timeline-date">2000 onwards</div>
+          </div>
+
+          <div class="timeline-structure">
+            <!-- circle-5.svg -->
+            <svg class="timeline-point" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.54 27.574">
+              <path fill="none" stroke="#000" stroke-width="2.5" d="M2.135 6.218c-1.39 2.843-.874 7.388.15 10.935C3.31 20.7 4.84 23.248 7.46 24.745c2.62 1.496 6.33 1.942 9.373 1.25 3.043-.69 5.422-2.515 7.092-5.672 1.67-3.156 2.63-7.64 2.294-11.077-.336-3.437-1.966-5.83-4.865-7.013-2.9-1.185-7.068-1.161-10.8-.58-3.733.583-7.03 1.723-8.42 4.566z"/>
+            </svg>
+          </div>
+
+          <div class="timeline-content">
+            <div class="timeline-content-inner">
+              <h2>The New Kilner Jar</h2>
+              <div class="timeline-mobile-date">2000 onwards</div>
+              <p>Modern Kilner jars, also known as "New Kilner Jars", are available in screw top and clip-top variations. You can purchase these, as well as spares, from homeware stores or many online markets.</p>
+              <p>Please refer to the <a href="https://www.kilnerjar.co.uk/">Kilner</a> website for more information.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -123,6 +426,11 @@
         </ul>
       </div>
 
+      <div id="disclaimer">
+        <h1>Disclaimer</h1>
+        <p>The data, measurements and other information on this website is provided for free with absolutely no assurances that it is correct. I've done my best but please be sensible with it!</p>
+      </div>
+
       <div id="footer">
         This website has no affiliation with <b>Rayware Limited</b>, the owners of the <a href="https://www.kilnerjar.co.uk/">Kilner</a> brand.
         <br />
@@ -132,5 +440,28 @@
         Website by <a href="https://lukemitchell.co/">Luke Mitchell</a>. Created in 2021.
       </div>
     </div>
+
+    <script type="text/javascript">
+      function selectTimelineItem(e) {
+        // Find timeline-item, as a parent
+        let node = e.target;
+        while (node.className !== "timeline-item") {
+          if (!node.parentNode) {
+            return console.warning("Unable to find parent timeline item");
+          }
+          node = node.parentNode;
+        }
+
+        // De-select all other timeline items
+        document.querySelectorAll(".timeline-item").forEach(el => el.classList.remove("selected"));
+
+        // Mark target timeline item as selected
+        node.classList.add("selected");
+      }
+
+      document.querySelectorAll(".timeline-point").forEach(el => {
+        el.addEventListener("click", selectTimelineItem);
+      });
+    </script>
   </body>
 </html>
