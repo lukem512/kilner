@@ -46,8 +46,8 @@
 
       <div id="intro">
         <h1>About this website</h1>
-        <p>This website contains descriptions, illustrations and images of vintage Kilner&reg; preserving jars. The design of the jar has changed several times since its creation and most components are not interchangeable.</p>
-        <p>Using the timeline, you may be able to identify your own vintage jars and acquire missing parts to keep them in use.</p>
+        <p>Use the timeline to identify your vintage Kilner&reg; preserving jars and to help acquire missing parts to keep them in use.</p>
+        <p class="no-mobile"><b>Click</b> on a <b class="primary">timeline item</b> for details, illustrations and images of the jar.</p>
       </div>
 
       <!-- Message for the Luddites -->
@@ -59,7 +59,7 @@
         <h1>The history of the Kilner&reg; Jar</h1>
 
         <!-- Original -->
-        <div id="timeline-original" class="timeline-item selected">
+        <div id="timeline-original" class="timeline-item">
           <div class="timeline-item-label">
             <div class="timeline-title">Original "Kilner" Jar</div>
             <div class="timeline-date">1919 &#8212; 1948</div>
@@ -776,20 +776,27 @@
           node = node.parentNode;
         }
 
+        // De-selecting?
+        const remove = node.classList.contains("selected");
+
         // De-select all other timeline items
         document.querySelectorAll(".timeline-item").forEach(el => el.classList.remove("selected"));
 
         // Mark target timeline item as selected
-        node.classList.add("selected");
+        if (!remove) {
+          node.classList.add("selected");
+        }
 
         // Scroll to anchor
         var pos = findPos(node);
         window.scrollTo({top: pos.y - 8, behavior: "smooth"});
       }
 
-      document.querySelectorAll(".timeline-point").forEach(el => {
+      // Add click handlers
+      const selectors = [".timeline-point", ".timeline-item-label"];
+      selectors.forEach(x => document.querySelectorAll(x).forEach(el => {
         el.addEventListener("click", selectTimelineItem);
-      });
+      }));
     </script>
   </body>
 </html>
