@@ -59,7 +59,7 @@
         <h1>The history of the Kilner&reg; Jar</h1>
 
         <!-- Original -->
-        <div class="timeline-item selected">
+        <div id="timeline-original" class="timeline-item selected">
           <div class="timeline-item-label">
             <div class="timeline-title">Original "Kilner" Jar</div>
             <div class="timeline-date">1919 &#8212; 1948</div>
@@ -241,7 +241,7 @@
         </div>
 
         <!-- Improved -->
-        <div class="timeline-item">
+        <div  id="timeline-improved" class="timeline-item">
           <div class="timeline-item-label">
             <div class="timeline-title">Improved "Kilner" Jar</div>
             <div class="timeline-date">1948 &#8212; 1969</div>
@@ -416,7 +416,7 @@
         </div>
 
         <!-- Dual Purpose -->
-        <div class="timeline-item">
+        <div id="timeline-dualpurpose" class="timeline-item">
           <div class="timeline-item-label">
             <div class="timeline-title">Dual Purpose Jar</div>
             <div class="timeline-date">1969 &#8212; 1978</div>
@@ -524,7 +524,7 @@
         </div>
 
         <!-- Ravenhead "Red Tops" -->
-        <div class="timeline-item">
+        <div id="timeline-ravenhead" class="timeline-item">
           <div class="timeline-item-label">
             <div class="timeline-title">Ravenhead "Red Top"</div>
             <div class="timeline-date">1978 &#8212; 2000</div>
@@ -705,7 +705,7 @@
         </div>
 
         <!-- New Kilner Jars -->
-        <div class="timeline-item" >
+        <div id="timeline-new" class="timeline-item" >
           <div class="timeline-item-label">
             <div class="timeline-title">New Kilner Jar</div>
             <div class="timeline-date">2000 onwards</div>
@@ -754,10 +754,22 @@
     </div>
 
     <script type="text/javascript">
+      function findPos(node) {
+        if (node) {
+          var parentPos = findPos(node.offsetParent);
+          return {
+            x: parentPos.x + node.offsetLeft,
+            y: parentPos.y + node.offsetTop
+          };
+        } else {
+          return {x: 0, y: 0};
+        }
+      }
+
       function selectTimelineItem(e) {
         // Find timeline-item, as a parent
         let node = e.target;
-        while (node.className !== "timeline-item") {
+        while (node.className !== "timeline-item" && node.className !== "timeline-item selected") {
           if (!node.parentNode) {
             return console.log("Unable to find parent timeline item");
           }
@@ -769,6 +781,10 @@
 
         // Mark target timeline item as selected
         node.classList.add("selected");
+
+        // Scroll to anchor
+        var pos = findPos(node);
+        window.scrollTo({top: pos.y - 8, behavior: "smooth"});
       }
 
       document.querySelectorAll(".timeline-point").forEach(el => {
