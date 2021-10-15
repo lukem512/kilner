@@ -45,6 +45,10 @@ a {
    color: var(--primary);
  }
 
+ li {
+   line-height: 30px;
+ }
+
 .kilner-text {
    font-variant: small-caps;
  }
