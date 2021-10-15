@@ -272,7 +272,6 @@ a {
 }
 
 .gallery img {
-  width: 115px;
   margin: 8px;
   border: 2px solid var(--background);
   transition: 0.2s ease-in;
