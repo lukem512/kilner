@@ -45,7 +45,7 @@ a {
    color: var(--primary);
  }
 
- li {
+ li a {
    line-height: 30px;
  }
 
